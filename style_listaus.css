@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: #59514E;
+}
+
+.img-logo {
+    filter: invert(13%) sepia(9%) saturate(386%) hue-rotate(314deg) brightness(93%) contrast(93%);
+    position: absolute;
+    top: 5%;
+    right: 45%;
+}
+
+p {
+    font-size: larger;
+    color: white;
+    position: absolute;
+    top: 25%;
+    right: 45%;
+}
+
+table {
+    width: 25em;
+    font-size: large;
+    border-collapse: collapse;
+    color: white;
+    margin: 250px auto;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 12px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #4B4340;
+  }

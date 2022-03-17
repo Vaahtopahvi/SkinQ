@@ -1,3 +1,20 @@
+// Sulkee listan jos käyttäj klikkaa listan ulkopuolelle
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+  
+    
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+  //tällä listaa selataan
 function browseList() {
     var input, filter, ul, li, a, i;
     input = document.getElementById("myInput");
@@ -10,6 +27,8 @@ function browseList() {
     } else {
       dropdown.classList.remove('show');
     }
+
+    //filteröidään pois muut mitä ei haeta
     for (i = 0; i < li.length; i++) {
       a = li[i].getElementsByTagName("a")[0];
       if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
