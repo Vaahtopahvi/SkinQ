@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <script src="functionality.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     </head>
 
@@ -14,8 +15,25 @@
 
         <div class="wrapper">
             <div class="search_box">
-                <input type="text" placeholder="Glycerin, PEG-120, Citric...">
+                <input type="text" id = "myInput" onkeyup="browseList()" placeholder="Glycerin, PEG-120, Citric...">
                 <i class="fas fa-search"></i>
+
+                <div id="myDropdown" class="dropdown-content">
+                <ul id="myUL">
+                    <li><a href="#">Citric</a></li>
+
+                    <li><a href="#">Glycerin</a></li>
+                    <li><a href="#">Glycolic acid</a></li>
+                    <li><a href="#">Glycolipid</a></li>
+                    <li><a href="#">Glycol stearate</a></li>
+
+                    <li><a href="#">PEG-120</a></li>
+
+                    <li><a href="#">Salicin</a></li>
+                    <li><a href="#">Salicylic Acid</a></li>
+                    </div>
+                    
+                  </ul>
             </div>
         </div>
     </body>
