@@ -1,8 +1,8 @@
+
+
 // Sulkee listan jos käyttäj klikkaa listan ulkopuolelle
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
-  
-    
       var dropdowns = document.getElementsByClassName("dropdown-content");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
@@ -16,12 +16,15 @@ window.onclick = function(event) {
 
   //tällä listaa selataan
 function browseList() {
+
     var input, filter, ul, li, a, i;
+
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
     ul = document.getElementById("myUL");
     li = ul.getElementsByTagName("li");
     dropdown = document.getElementById("myDropdown");
+    
     if (input.value.trim() != '') {
       dropdown.classList.add('show');
     } else {

@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width initial-scale=1.0">
         <link rel="stylesheet" href="style_listaus.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <script src="listing.js"></script>
+
     </head>
 
     <body>
@@ -14,42 +16,59 @@
         <img class="img-logo" src="img/logo.png" alt="SkinQ Logo">
         </a>
 
-        <p>List of ingredients:</p>
+        <h2>List of ingredients:</h2>
 
         <table>
-            <tr>
+            <tr onclick="showHideRow('hidden_row1');">          <!--Sain funktion toimimaan mutten sillä tavalla miten halusin, jätän sen kuitenkin tähän-->
               <td>Citric<br>
-                Good</td>
+                <b>Good</b><br>
+            <p>-Citric acid is an extract derived from citrus fruits and is used primarily in small amounts 
+                to adjust the pH of products to prevent them from being too alkaline or basic.</p>
+            </td>
             </tr>
             <tr>
                 <td>Glycerin<br>
-                Best</td>
+                <b>Best</b><br>
+                <p>-A naturally occurring substance in skin that helps retain moisture. It is used in skin 
+                    care products to help defend against dryness.</p>
+                </td>
             </tr>
             <tr>
               <td>Glycolic Acid<br>
-                Best</td>
+                <b>Best</b><br>
+                <p>-This well-known ingredient is the most-researched alpha hydroxy acid (AHA) and helps renew skin’s 
+                surface as well as significantly improve its hydration.</p>
+            </td>
             </tr>
             <tr>
                 <td>Glycolipid<br>
-                    Best</td>
+                    <b>Best</b><br>
+                    <p>-Type of lipid composed of sugar (monosaccharide) and fat (lipid).</p>
+                </td>
             </tr>
             <tr>
                 <td>Glycol stearate<br>
-                    Best</td>
+                    <b>Best</b><br>
+                    <p>-A mixture of glycerin and stearic acid used as an emollient, surfactant, 
+                    and emulsifier. May also be used to impart a pearlescent appearance to a formula.</p>
+                </td>
             </tr>
             <tr>
                 <td>PEG-120<br>
-                Best</td>
+                <b>Best</b><br>
+                <p>-Functions as a cleansing agent and texture enhancer.</p></td>
             </tr>
             <tr>
                 <td>Salicin<br>
-                Good</td>
+                <b>Good</b><br>
+                <p>-This active medicinal component from willow bark is metabolized by the body into salicylic acid when ingested.</p></td>
             </tr>
             <tr>
                 <td>Salicylic Acid<br>
-                Best</td>
+                <b>Best</b><br>
+                <p>-Oil-soluble exfoliating ingredient that gently helps slough off dead skin cells 
+                and unclogs pores, for softer, smoother texture and tone.</p></td>
             </tr>
           </table>
-
     </body>
 </html>
