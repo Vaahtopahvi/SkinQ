@@ -12,9 +12,8 @@ body {
 
 .img-logo {
     filter: invert(13%) sepia(9%) saturate(386%) hue-rotate(314deg) brightness(93%) contrast(93%);
-    position: absolute;
-    top: 20%;
-    right: 45%;
+    margin: 100px auto 20px;
+    display: block;
 }
 
 .wrapper {
@@ -114,4 +113,21 @@ background-color: #eee;
 .dropdown-content {
     width: 95%;
 }
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #2A2626;
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #59514E;
+    border-radius: 10px;
+    transition: background .5s;
+    margin-top: 30px;
+}
+
+.button:hover {
+    background: #eee;
 }
